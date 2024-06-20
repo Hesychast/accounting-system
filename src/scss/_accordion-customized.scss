@@ -1,0 +1,63 @@
+.accordion {
+    background-color: #191d7b;
+
+    &-button {
+        background-color: #191d7b;
+
+        &:not(.collapsed) {
+            color: var(--bs-white);
+            background-color: #191d7b;
+        }   
+         
+        &__image {
+            padding-right: 0.5rem;
+        }
+
+        &.collapsed {
+            //color: var(--bs-black);
+            color: #f39200;
+        }        
+        
+        padding-bottom: 0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: bold;
+
+        &::after {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgb(243, 146, 0)' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+        }
+        &:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgb(255,255,255)' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+        }
+    }
+
+    &-button:focus {
+        box-shadow: none;
+    }
+    
+    &-item {
+        border: none;
+        --bs-accordion-border-color: transparent;
+        background-color: #191d7b;
+    }        
+
+    &-body {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: .9rem;
+
+        a {
+            color: var(--bs-white);
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                margin: .5rem 0 .8rem;
+            }
+        }
+    }
+}

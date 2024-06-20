@@ -1,0 +1,59 @@
+.toolbar {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    
+    &_shown {
+        display: flex;
+    }
+
+    &__button,
+    &__button.btn {
+        font-size: 1.5rem;
+        border: none;
+        color: #6c757d;
+        z-index: 2;
+    }
+
+    .search {
+        top: 2px;
+    }
+
+    .toolbar__search {
+        &-text {
+            width: 0;
+            transition: all .35s;
+            padding: 0;
+
+            &_shown {
+                box-shadow: none !important;
+                border-style: solid; 
+                border-width: thin;
+                border-color: #6c757d;
+                right: 0;
+                position: relative;
+                border-radius: 5px;
+                width: 12rem;
+                padding: .375rem .75rem;;
+
+                @media (min-width: 768px) {
+                    width: 20rem;
+                }
+            }
+        }
+        &-button {
+            opacity: 0;
+            width: 0;
+            transition: all .35s;
+            
+            &_shown {
+                width: 21px;
+                opacity: 1;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+}
