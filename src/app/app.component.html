@@ -30,7 +30,7 @@
                     <div class="accordion-body">
                         <ul>
                             <li><a [routerLink]="['/users-management']"><i class="bi bi-person-gear accordion-button__image"></i>Керування користувачами</a></li>
-                            <li><a href="#"><i class="bi bi-wrench-adjustable accordion-button__image"></i>Налаштування системи</a></li>
+                            <li><a [routerLink]="['/not-available']"><i class="bi bi-wrench-adjustable accordion-button__image"></i>Налаштування системи</a></li>
                         </ul>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                     <div class="accordion-body">
                         <ul>
-                            <li><a href="#"><i class="bi bi-calendar2-check accordion-button__image"></i>Налаштування ГО</a></li>
+                            <li><a [routerLink]="['/not-available']"><i class="bi bi-calendar2-check accordion-button__image"></i>Налаштування ГО</a></li>
                         </ul>
                     </div>
                 </div>
@@ -63,10 +63,10 @@
                     <div class="accordion-body">
                         <ul>
                             <li>
-                                <a href="#"><i class="bi bi-bricks accordion-button__image"></i>ОЗ</a>
+                                <a [routerLink]="['/not-available']"><i class="bi bi-bricks accordion-button__image"></i>ОЗ</a>
                             </li>
                             <li>
-                                <a href="#"><i
+                                <a [routerLink]="['/not-available']"><i
                                         class="bi bi-cloud-check accordion-button__image"></i>МНМА</a>
                             </li>
                         </ul>
@@ -85,10 +85,10 @@
                     <div class="accordion-body">
                         <ul>
                             <li>
-                                <a href="#"><i class="bi bi-currency-euro accordion-button__image"></i>Валютні операції</a>
+                                <a [routerLink]="['/not-available']"><i class="bi bi-currency-euro accordion-button__image"></i>Валютні операції</a>
                             </li>
                             <li>
-                                <a href="#"><i
+                                <a [routerLink]="['/not-available']"><i
                                         class="bi bi-bank accordion-button__image"></i>Розрахунки з контаргентами</a>
                             </li>
                         </ul>
@@ -107,10 +107,10 @@
                     <div class="accordion-body">
                         <ul>
                             <li>
-                                <a href="#"><i class="bi bi-calendar2-date accordion-button__image"></i>Табельний облік</a>
+                                <a [routerLink]="['/not-available']"><i class="bi bi-calendar2-date accordion-button__image"></i>Табельний облік</a>
                             </li>
                             <li>
-                                <a href="#"><i
+                                <a [routerLink]="['/not-available']"><i
                                         class="bi bi-wallet2 accordion-button__image"></i>Заробітна плата</a>
                             </li>
                         </ul>
@@ -129,12 +129,14 @@
                     <input type="text" class="search__text toolbar__search-text form-control" placeholder="Пошук по системі">
                     <button class="search__button toolbar__search-button"><i class="bi bi-search"></i></button>
                 </div>
-                <button alt="Пошук" title="Пошук" class="toolbar__button search-button btn"><i class="bi bi-binoculars"></i></button>
-                <a href="#" alt="Повідомлення" title="Повідомлення" class="toolbar__button messages-button"><i class="bi bi-bell"></i></a>
+                <a  [routerLink]="['/not-available']" alt="Пошук" title="Пошук" class="toolbar__button search-button btn"><i class="bi bi-binoculars"></i></a>
+                <!-- <button alt="Пошук" title="Пошук" class="toolbar__button search-button btn"><i class="bi bi-binoculars"></i></button> -->
+                <a  [routerLink]="['/not-available']" alt="Повідомлення" title="Повідомлення" class="toolbar__button messages-button"><i class="bi bi-bell"></i></a>
                 <div class="btn-group">
                     <button alt="Користувач" title="Користувач" class="toolbar__button users-button btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i></button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Особистий кабінет</a></li>
+                    <ul class="dropdown-menu">                        
+                        <li><a class="dropdown-item" [routerLink]="['/not-available']">Особистий кабінет</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Особистий кабінет</a></li> -->
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="index.html">Вихід</a></li>
                     </ul>
