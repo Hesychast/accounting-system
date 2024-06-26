@@ -16,8 +16,58 @@
             <input type="text" class="search__text form-control" placeholder="Пошук по меню">
             <button class="search__button"><i class="bi bi-search"></i></button>
         </div>
-    
-        <div class="main-menu__accordion accordion" id="accordionPanelsStayOpenExample">
+        
+        <div class="main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">
+                    <a [routerLink]="['/users-management']"><i class="bi bi-sliders2-vertical"></i> Адміністрування</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-archive"></i> Ведення НДІ</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-briefcase"></i> Господарські операції</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-cash-coin"></i> Кошти та розрахунки</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-tools"></i> Виробництво, реалізація продукції, товарів, робіт, послуг</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-house-lock"></i> Закупівля, запаси та складський облік</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-people"></i> Персонал та заробітна плата</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-building-check"></i> Основні засоби та НМА</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-folder-plus"></i> Облік доходів та результатів діяльності</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-folder-minus"></i> Податковий облік</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-calendar2-check"></i> Регламентована державна звітність, баланс</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-shop"></i> Роздрібна торгівля</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-cake2"></i> Облік харчування</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-bank"></i> Комунальні розрахунки</a>
+                </li>
+                <li class="main-menu__item">
+                    <a [routerLink]="['/not-available']"><i class="bi bi-truck"></i> Облік автотранспорту</a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- <div class="main-menu__accordion accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button"
@@ -117,7 +167,7 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>         -->
     </div>
     
     <div class="main">

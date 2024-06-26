@@ -18,4 +18,8 @@ export class ModuleDashboardComponent {
   openUsers() {
     this.router.navigate(['users']);
   }
+
+  notAvailable() {
+    this.router.navigate(['not-available']);
+  }
 }
