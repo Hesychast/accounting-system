@@ -1,0 +1,38 @@
+<article class="article">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="article__title"><i class="bi bi-person-vcard"></i> {{title}}</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Прізвище</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Прізвище">
+                    <label for="firstName" class="form-label">Ім'я</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Ім'я">
+                    <label for="secondName" class="form-label">По-батькові</label>
+                    <input type="text" class="form-control" id="secondName" placeholder="По-батькові">
+                    <label for="phone" class="form-label">Телефон</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                    <label for="mobile" class="form-label">Мобільний</label>
+                    <input type="text" class="form-control" id="mobile" placeholder="Мобільний">
+                    <label for="email" class="form-label">Ел. пошта</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <label for="address" class="form-label">Ел. пошта</label>
+                    <input type="text" class="form-control" id="address" placeholder="Адреса">
+                </div>
+                <div class="mb-3">
+                    <label for="comment" class="form-label">Коментар</label>
+                    <textarea class="form-control" id="comment" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-secondary user-form-button" (click)="cancel()">Зберігти</button>
+                    <button class="btn btn-secondary user-form-button" (click)="cancel()">Скасувати</button>
+                    <button class="btn btn-danger user-form-button" (click)="cancel()"`>Видалити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
