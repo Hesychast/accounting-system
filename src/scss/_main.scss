@@ -1,6 +1,8 @@
 .main {
-    height: 5.4rem;
+    min-height: 5.4rem;
+    height: 100vh;
     width: 100%;
+    overflow: auto;
 
     &__navbar {
         display: flex;

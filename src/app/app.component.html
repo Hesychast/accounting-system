@@ -1,6 +1,6 @@
 
 <div class="wrapper d-flex flex-row">
-    <div class="sidebar" (click)="switchClass()" [ngClass]="status ? 'sidebar_hidden' : ''">
+    <div class="sidebar" [ngClass]="status ? 'sidebar_hidden' : ''">
         <div class="app-title">
             <p class="app-title_big">АТ "Укрзалізниця" 
                 <svg width="2.7rem" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 190 92">
@@ -29,7 +29,7 @@
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                     <div class="accordion-body">
                         <ul>
-                            <li><a href="#"><i class="bi bi-person-gear accordion-button__image"></i>Керування користувачами</a></li>
+                            <li><a [routerLink]="['/users-management']"><i class="bi bi-person-gear accordion-button__image"></i>Керування користувачами</a></li>
                             <li><a href="#"><i class="bi bi-wrench-adjustable accordion-button__image"></i>Налаштування системи</a></li>
                         </ul>
                     </div>
@@ -141,5 +141,7 @@
                 </div>
             </div>
         </nav>
+
+        <router-outlet />
     </div>
 </div>

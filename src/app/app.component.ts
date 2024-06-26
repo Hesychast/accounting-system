@@ -1,6 +1,6 @@
 import { Component, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterModule, Router } from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -9,14 +9,21 @@ import { RouterOutlet } from '@angular/router';
     styleUrl: './app.component.scss',
     imports: [
       CommonModule,
-      RouterOutlet, 
+      RouterOutlet,
+      RouterModule
     ]
 })
 export class AppComponent {
   title = 'АТ УЗ - Автоматизована система обліку';
   status: boolean = false;
 
+  constructor(private router: Router) {}
+
   switchClass() {
     this.status = !this.status;
   }
+
+  // usersManagement() {
+  //   this.router.navigate(['users-management']);
+  // }
 }
