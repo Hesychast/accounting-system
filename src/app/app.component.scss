@@ -1,0 +1,17 @@
+.main-menu {
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 1.2rem;
+        }
+        
+        a {
+            color: #f39200;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
