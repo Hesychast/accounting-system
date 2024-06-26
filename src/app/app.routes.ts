@@ -2,6 +2,9 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     { path: 'users-management', loadComponent: () => import('./components/module-dashboard/module-dashboard.component').then(m => m.ModuleDashboardComponent) },
+    { path: 'users', loadComponent: () => import('./components/users-admin-panel/users-admin-panel.component').then(m => m.UsersAdminPanelComponent) }
+
+
     // { path: '**', redirectTo: '/404' }
     //{ path: '', redirectTo: '/articles', pathMatch: 'full' },
     // { path: 'articles', loadComponent: () => import('./components/article-list/article-list.component').then(m => m.ArticleListComponent), pathMatch: 'full' },

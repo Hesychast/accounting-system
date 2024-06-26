@@ -11,7 +11,12 @@ import { RouterModule } from '@angular/router';
   templateUrl: './module-dashboard.component.html',
   styleUrl: './module-dashboard.component.scss'
 })
-// TODO: Use this component as a base module for visualizing the buttons of every module.
 export class ModuleDashboardComponent {
   title = 'Керування користувачами'
+
+  constructor(private router: Router) {}
+
+  openUsers() {
+    this.router.navigate(['users']);
+  }
 }
