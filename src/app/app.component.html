@@ -1,10 +1,145 @@
 
 <div class="wrapper d-flex flex-row">
-    <div class="sidebar">
-        <app-main-menu-sidebar></app-main-menu-sidebar>
+    <div class="sidebar" (click)="switchClass()" [ngClass]="status ? 'sidebar_hidden' : ''">
+        <div class="app-title">
+            <p class="app-title_big">АТ "Укрзалізниця" 
+                <svg width="2.7rem" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 190 92">
+                    <path fill="#f39200" d="M71.68,16.48c5.38,0 8,2.08 8,4.91s-2.64,4.91-8,4.91H66.36L59.74,40.18H72.56c5.76,0 8.21,2 8.21,4.81s-2.45,4.82-8.21,4.82H55.1l-8,16.62H70.67c18.47,0 27.66,-8 27.66,-18.47A18.15,18.15,0,0,0,89.66,32c4.89,-3.24 8.08,-8 8.08-13.64C97.74,7 87.92,0 72.34,0H48.76l-15,31.4L18.8,0H0L24.16,51.22L17,66.43h18.5L59.38,16.48Z"></path>
+                    <path fill="#f39200" d="M104.49,28.32h62.77l-7.32-15.48A24.67,24.67,0,0,0,138.08,0H100.15A25.3,25.3,0,0,1,107,17.32A26.22,26.22,0,0,1,104.49,28.32Z"></path>
+                    <path fill="#f39200" d="M105,38.11a24.77,24.77,0,0,1,2.52,11a22.82,22.82,0,0,1,-7.39,17.32h85.11L171.89,38.11Z"></path>
+                </svg>
+            </p>
+            <p class="app-title_small">Автоматизована система обліку</p>
+        </div>
+    
+        <div class="search">
+            <input type="text" class="search__text form-control" placeholder="Пошук по меню">
+            <button class="search__button"><i class="bi bi-search"></i></button>
+        </div>
+    
+        <div class="main-menu__accordion accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                        aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        <i class="bi bi-sliders2-vertical accordion-button__image"></i>Адміністрування
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-person-gear accordion-button__image"></i>Керування користувачами</a></li>
+                            <li><a href="#"><i class="bi bi-wrench-adjustable accordion-button__image"></i>Налаштування системи</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                        aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <i class="bi bi-briefcase accordion-button__image"></i>Господарські операції
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-calendar2-check accordion-button__image"></i>Налаштування ГО</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed " type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                        aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        <i class="bi bi-building-check accordion-button__image"></i>Основні засоби та МНМА
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="bi bi-bricks accordion-button__image"></i>ОЗ</a>
+                            </li>
+                            <li>
+                                <a href="#"><i
+                                        class="bi bi-cloud-check accordion-button__image"></i>МНМА</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed " type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+                        aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        <i class="bi bi-cash-coin accordion-button__image"></i> Кошти та розрахунки
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="bi bi-currency-euro accordion-button__image"></i>Валютні операції</a>
+                            </li>
+                            <li>
+                                <a href="#"><i
+                                        class="bi bi-bank accordion-button__image"></i>Розрахунки з контаргентами</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed " type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
+                        aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                        <i class="bi bi-piggy-bank accordion-button__image"></i> Персонал та заробітна плата
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="bi bi-calendar2-date accordion-button__image"></i>Табельний облік</a>
+                            </li>
+                            <li>
+                                <a href="#"><i
+                                        class="bi bi-wallet2 accordion-button__image"></i>Заробітна плата</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
     </div>
     
     <div class="main">
-        <app-main-navbar></app-main-navbar>
+        <nav class="main__navbar">
+            <button class="switch-button" (click)="switchClass()" [ngClass]="status ? 'clicked' : ''" title="Сховати/показати панель головного меню"><i class="bi bi-arrow-bar-left"></i></button>
+        
+            <div class="toolbar toolbar_hidden">
+                <div class="search">
+                    <input type="text" class="search__text toolbar__search-text form-control" placeholder="Пошук по системі">
+                    <button class="search__button toolbar__search-button"><i class="bi bi-search"></i></button>
+                </div>
+                <button alt="Пошук" title="Пошук" class="toolbar__button search-button btn"><i class="bi bi-binoculars"></i></button>
+                <a href="#" alt="Повідомлення" title="Повідомлення" class="toolbar__button messages-button"><i class="bi bi-bell"></i></a>
+                <div class="btn-group">
+                    <button alt="Користувач" title="Користувач" class="toolbar__button users-button btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i></button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Особистий кабінет</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="index.html">Вихід</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
 </div>

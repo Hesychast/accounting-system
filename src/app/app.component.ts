@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { MainMenuSidebarComponent } from "./components/main-menu-sidebar/main-menu-sidebar.component";
-import { MainNavbarComponent } from './components/main-navbar/main-navbar.component';
 
 @Component({
     selector: 'app-root',
@@ -9,11 +8,15 @@ import { MainNavbarComponent } from './components/main-navbar/main-navbar.compon
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     imports: [
+      CommonModule,
       RouterOutlet, 
-      MainMenuSidebarComponent,
-      MainNavbarComponent
     ]
 })
 export class AppComponent {
   title = 'АТ УЗ - Автоматизована система обліку';
+  status: boolean = false;
+
+  switchClass() {
+    this.status = !this.status;
+  }
 }
