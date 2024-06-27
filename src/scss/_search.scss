@@ -1,0 +1,21 @@
+.search {
+    position: relative;
+
+    &__text {
+        box-shadow: none !important;
+        border-color: transparent !important;
+        
+        &::placeholder {
+            color: #6c757d;
+        }
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 5px;
+        right: 5px;        
+        color: #6c757d;
+    }
+}

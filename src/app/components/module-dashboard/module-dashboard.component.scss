@@ -1,0 +1,9 @@
+.card-button {
+    min-width: 15rem;
+    height: 6rem;
+
+    @media (min-width: 1800px) {
+        min-width: 22.6rem;
+        font-size: 1.4rem;
+    }
+}

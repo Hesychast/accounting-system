@@ -1,0 +1,56 @@
+<article class="article">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="article__title"><i class="bi bi-person-lines-fill"></i> {{title}}</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <button class="btn btn-primary add-button" (click)="addUser()"><i class="bi bi-person-plus"></i> Додати користувача</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-users">
+                        <table class="table table-sm table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Ім'я для входу</th>
+                                    <th>Повне ім'я</th>
+                                    <th>Телефон</th>
+                                    <th>Мобільний</th>
+                                    <th>Ел. пошта</th>
+                                    <th>Адреса</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let user of users">
+                                    <td>{{user.login}}</td>
+                                    <td>{{user.lastName}} {{user.firstName}} {{user.secondName}}</td>
+                                    <td>{{user.phone}}</td>
+                                    <td>{{user.mobile}}</td>
+                                    <td>{{user.email}}</td>
+                                    <td>{{user.address}}</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a [routerLink]="['/edit-user', user.id]" title="Редагувати" class="btn btn-sm btn-success button-user-edit"><i class="bi bi-pen"></i></a>
+                                            <a (click)="confirmDelete(user.id)" title="Видалити" class="btn btn-sm btn-danger button-user-edit"><i class="bi bi-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<app-confirm-dialog 
+    *ngIf="isConfirming" 
+    (confirmed)="deleteUser($event)">
+</app-confirm-dialog>

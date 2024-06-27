@@ -1,0 +1,14 @@
+.main {
+    min-height: 5.4rem;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid .5px #e6e6e6;
+        padding: 1rem;
+        background-color: #ececec;
+    }
+}
