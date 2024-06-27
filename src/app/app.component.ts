@@ -1,6 +1,7 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterModule, Router } from '@angular/router';
+import { lastValueFrom } from 'rxjs';
 
 @Component({
     selector: 'app-root',
@@ -17,13 +18,9 @@ export class AppComponent {
   title = 'АТ УЗ - Автоматизована система обліку';
   status: boolean = false;
 
-  constructor(private router: Router) {}
-
+  constructor(public router: Router) {}
+  
   switchClass() {
     this.status = !this.status;
   }
-
-  // usersManagement() {
-  //   this.router.navigate(['users-management']);
-  // }
 }

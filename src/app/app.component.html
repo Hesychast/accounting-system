@@ -1,4 +1,7 @@
-
+<div *ngIf="router.url === '/login'; else defaultTpl">
+    <router-outlet />
+</div>
+<ng-template #defaultTpl> 
 <div class="wrapper d-flex flex-row">
     <div class="sidebar" [ngClass]="status ? 'sidebar_hidden' : ''">
         <div class="app-title">
@@ -89,3 +92,4 @@
         <router-outlet />
     </div>
 </div>
+</ng-template>

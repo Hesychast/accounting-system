@@ -1,0 +1,67 @@
+.login {
+    background-color: #221673;
+
+    @media (min-width: 768px) {
+        background-image: url('../../img/login-background.jpg');
+        background-repeat: no-repeat;
+        background-position: 0% 50%;
+        background-size: cover;
+    }
+
+    @media (min-height: 735px) {
+        background-position: 0% 25%;
+
+    }
+
+    .app-title {
+        text-align: center;
+
+        @media (min-width: 1024px) {
+            &_big {
+                font-size: 2.5rem;
+            }
+
+            &_small {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            &_big {
+                font-size: 3rem;
+            }
+
+            &_small {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    
+    .logo {
+        width: 220px;
+        height: 84px;
+    }
+    
+    .login-card {
+        width: 22rem;
+        
+        .card-header {
+            background-color: #191d7b;
+            color: #f39200;
+            font-weight: bold;
+        }
+
+        .btn-primary,
+        .form-check-input:checked {
+            background-color: #191d7b;
+            border-color: #191d7b;
+            color: #f39200;
+            font-weight: bold;
+        }
+        
+        .form-check-input:checked {
+            box-shadow: transparent;
+        }
+    }
+}
+    
