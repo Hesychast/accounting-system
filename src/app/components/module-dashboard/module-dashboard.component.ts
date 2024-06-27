@@ -11,7 +11,7 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './module-dashboard.component.scss'
 })
 export class ModuleDashboardComponent {
-  title = 'Керування користувачами'
+  title = 'Адміністрування';
 
   constructor(private router: Router) {}
 
