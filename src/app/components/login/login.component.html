@@ -28,15 +28,15 @@
                         <div class="card text-bg-light mb-3 mb-md-0 login-card">
                             <div class="card-header">Увійти у систему</div>
                             <div class="card-body">
-                                <form action="app.html" method="get">
+                                <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)"> 
                                     <div class="form-group mb-3">
                                         <label for="input-name" class="form-label">Ім'я</label>
-                                        <input type="text" id="input-name" class="form-control">
+                                        <input type="text" id="input-name" class="form-control" name="name" [ngModel]="user?.name">
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="input-password" class="form-label">Пароль</label>
                                         <input type="password" id="input-password" class="form-control"
-                                            aria-describedby="passwordHelpBlock">
+                                            aria-describedby="passwordHelpBlock" name="password" [ngModel]="user?.password">
                                     </div>
                                     <div class="form-group mb-3">
                                         <div class="form-check">

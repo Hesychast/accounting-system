@@ -1,8 +1,4 @@
-<div *ngIf="router.url === '/login'; else defaultTpl">
-    <router-outlet />
-</div>
-<ng-template #defaultTpl> 
-<div class="wrapper d-flex flex-row">
+<div class="wrapper d-flex flex-row" *ngIf="router.url !== '/login'">
     <div class="sidebar" [ngClass]="status ? 'sidebar_hidden' : ''">
         <div class="app-title">
             <p class="app-title_big">АТ "Укрзалізниця" 
@@ -83,7 +79,7 @@
                     <ul class="dropdown-menu">                        
                         <li><a class="dropdown-item" [routerLink]="['/not-available']">Особистий кабінет</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="index.html">Вихід</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/login']">Вихід</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,4 +88,7 @@
         <router-outlet />
     </div>
 </div>
-</ng-template>
+
+<div *ngIf="router.url === '/login'">
+    <router-outlet />
+</div>
