@@ -62,107 +62,6 @@
             </ul>
 
         </div>
-        <!-- <div class="main-menu__accordion accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                        aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                        <i class="bi bi-sliders2-vertical accordion-button__image"></i>Адміністрування
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <ul>
-                            <li><a [routerLink]="['/users-management']"><i class="bi bi-person-gear accordion-button__image"></i>Керування користувачами</a></li>
-                            <li><a [routerLink]="['/not-available']"><i class="bi bi-wrench-adjustable accordion-button__image"></i>Налаштування системи</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                        aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        <i class="bi bi-briefcase accordion-button__image"></i>Господарські операції
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <ul>
-                            <li><a [routerLink]="['/not-available']"><i class="bi bi-calendar2-check accordion-button__image"></i>Налаштування ГО</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed " type="button"
-                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                        aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        <i class="bi bi-building-check accordion-button__image"></i>Основні засоби та МНМА
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <ul>
-                            <li>
-                                <a [routerLink]="['/not-available']"><i class="bi bi-bricks accordion-button__image"></i>ОЗ</a>
-                            </li>
-                            <li>
-                                <a [routerLink]="['/not-available']"><i
-                                        class="bi bi-cloud-check accordion-button__image"></i>МНМА</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed " type="button"
-                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
-                        aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                        <i class="bi bi-cash-coin accordion-button__image"></i> Кошти та розрахунки
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <ul>
-                            <li>
-                                <a [routerLink]="['/not-available']"><i class="bi bi-currency-euro accordion-button__image"></i>Валютні операції</a>
-                            </li>
-                            <li>
-                                <a [routerLink]="['/not-available']"><i
-                                        class="bi bi-bank accordion-button__image"></i>Розрахунки з контаргентами</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed " type="button"
-                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
-                        aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                        <i class="bi bi-piggy-bank accordion-button__image"></i> Персонал та заробітна плата
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <ul>
-                            <li>
-                                <a [routerLink]="['/not-available']"><i class="bi bi-calendar2-date accordion-button__image"></i>Табельний облік</a>
-                            </li>
-                            <li>
-                                <a [routerLink]="['/not-available']"><i
-                                        class="bi bi-wallet2 accordion-button__image"></i>Заробітна плата</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>         -->
     </div>
     
     <div class="main">
@@ -175,13 +74,11 @@
                     <button class="search__button toolbar__search-button"><i class="bi bi-search"></i></button>
                 </div>
                 <a  [routerLink]="['/not-available']" alt="Пошук" title="Пошук" class="toolbar__button search-button btn"><i class="bi bi-binoculars"></i></a>
-                <!-- <button alt="Пошук" title="Пошук" class="toolbar__button search-button btn"><i class="bi bi-binoculars"></i></button> -->
                 <a  [routerLink]="['/not-available']" alt="Повідомлення" title="Повідомлення" class="toolbar__button messages-button"><i class="bi bi-bell"></i></a>
                 <div class="btn-group">
                     <button alt="Користувач" title="Користувач" class="toolbar__button users-button btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i></button>
                     <ul class="dropdown-menu">                        
                         <li><a class="dropdown-item" [routerLink]="['/not-available']">Особистий кабінет</a></li>
-                        <!-- <li><a class="dropdown-item" href="#">Особистий кабінет</a></li> -->
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="index.html">Вихід</a></li>
                     </ul>
