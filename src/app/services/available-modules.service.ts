@@ -10,74 +10,62 @@ export class AvailableModulesService {
     {
       id: 1,
       title: "Необоротні активи",
-      icon: "building-check",
-      url: ""
+      icon: "buildings"
     },
     {
       id: 2,
       title: "Запаси",
-      icon: "house-lock",
-      url: ""
+      icon: "house-lock"
     },
     {
       id: 3,
       title: "Кошти і розрахунки",
-      icon: "cash-coin",
-      url: ""
+      icon: "cash-coin"
     },
     {
       id: 4,
       title: "Заробітна плата",
-      icon: "people",
-      url: ""
+      icon: "people"
     },
     {
       id: 5,
       title: "Облік власного капіталу та фінансових інвестицій",
-      icon: "folder-plus",
-      url: ""
+      icon: "folder-plus"
     },
     {
       id: 6,
       title: "Реалізація продукції, товарів, робіт, послуг",
-      icon: "tools",
-      url: ""
+      icon: "cart4"
     },
     {
       id: 7,
       title: "Облік на позабалансових рахунках",
-      icon: "book-half",
-      url: ""
+      icon: "file-earmark-binary"
     },
     {
       id: 8,
       title: "Облік доходів, витрат та результатів діяльності",
-      icon: "bar-chart",
-      url: ""
+      icon: "bar-chart"
     },
     {
       id: 9,
       title: "Звітність",
-      icon: "calendar2-check",
-      url: ""
+      icon: "calendar2-check"
     },
     {
       id: 10,
       title: "Додаткові модулі",
-      icon: "boxes",
-      url: ""
+      icon: "boxes"
     },
     {
       id: 11,
       title: "Ведення НДІ",
-      icon: "archive",
-      url: ""
+      icon: "archive"
     },
     {
       id: 12,
       title: "Адміністрування",
-      icon: "sliders2-vertical",
-      url: "users-management",
+      icon: "tools"
     }
   ];
 
@@ -85,412 +73,412 @@ export class AvailableModulesService {
     {
       moduleId: 1,
       title: "Основні засоби",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 1,
       title: "Малоцінні необоротні матеріальні активи (МНМА)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 1,
       title: "Інші необоротні матеріальні активи (ІНМА)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 1,
       title: "Нематеріальні активи (НА)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 1,
       title: "Незавершені капітальні інвестиції",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 1,
       title: "Облік ремонтів ОЗ",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 1,
       title: "Незавершені капітальні інвестиції. Служба НКБ",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 1,
       title: "Будівлі, споруди, автотранспорт служби БМЕС",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 1,
       title: "Облік ремонтів вагонів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 2,
       title: "Облік запасів на складі",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 2,
       title: "Бухгалтерський облік запасів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 2,
       title: "Облік спецодягу",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 2,
       title: "Облік малоцінних і швидкозношуваних предметів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 2,
       title: "Облік спецодягу та ЗІЗ",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 2,
       title: "Облік староординатних запасів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 2,
       title: "Облік ТМЦ на складі",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 2,
       title: "Облік закупівель та постачання ТМЦ",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 2,
       title: "Облік медикаментів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 3,
       title: "Кошти (банк)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 3,
       title: "Кошти (каса)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 3,
       title: "Кошти (банк - валютні розрахунки)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 3,
       title: "Облік розрахунків з дебіторами - кредиторами",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 3,
       title: "Облік орендних операцій",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 3,
       title: "Облік внутрішніх та внутрішньогосподарських розрахунків",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 3,
       title: "Фінансові моделі господарської діяльності",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 3,
       title: "Кошти (каса - валютні розрахунки)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 3,
       title: "Централізоване фінансування",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Кадри",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Зарплата",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Статистична звітність по зарплаті",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Податкові розрахунки по зарплаті",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Розрахунки з пенсійним фондом по зарплаті",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "ЛокБриг",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Розрахунки з бюджетними фондами по зарплаті",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Табель обліку робочого часу",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Щомісячна персоніфікація (Пенсійний фонд)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Зарплата (наряди, маршрути провідників)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Зарплата (Розрахунок маршрутів провідників)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Зарплата (Довідник Номенклатури видів оплати)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Єдиний внесок - Розрахунки з фондом соціального страхування",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Розрахунок оплати за дні хвороби та зарплати",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Облік талонів на харчування",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Документи по зарплаті",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Аліменти, депоненти",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 4,
       title: "Розподіл виконавчих робіт по зарплаті",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 5,
       title: "Облік власного капіталу",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 5,
       title: "Облік фінансових інвестицій",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 6,
       title: "Реалізація продукції, товарів, робіт, послуг",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 6,
       title: "Реалізація продукції, товарів, робіт, послуг (ЗБ)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 7,
       title: "Облік на позабалансових рахунках",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 8,
       title: "Облік доходів та результатів діяльності",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 8,
       title: "Облік витрат",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 9,
       title: "АРМ 'Фінансова звітність'",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 9,
       title: "Фінансова та галузева статистична звітність",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 9,
       title: "Статистична звітність",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 9,
       title: "Оборотний баланс та Головна книга (звіт)",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 9,
       title: "Відомості, оперативні та аналітичні довідки",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 9,
       title: "Календар бухгалтера",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 9,
       title: "Зведена фінансова та податкова звітність",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік промислового виробництва",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік торгівлі, в т.ч. вагони-ресторани",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік громадського харчування",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Нарахування комунальних платежів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік автотранспорту",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік водопостачання",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік використання енергоносіїв",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік використання форменого одягу",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік сервісного обслуговування абонентів телефонної мережі",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік спільної діяльності",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік будівельних контрактів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Кошторис",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік паливного складу",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік харчування для пансіонатів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Облік виробництва та реалізації промислової продукції",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 10,
       title: "Реєстрація відповідальних пансіонатів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 11,
       title: "Ведення Нормативно-довідкової інформації системи",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 11,
       title: "Ведення зовнішніх класифікаторів системи",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 11,
       title: "Імпорт довідників із загальносистемних класифікаторів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 11,
       title: "Робота з договорами",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 12,
       title: "Користувачі",
-      path: "users"
+      url: "users"
     },
     {
       moduleId: 12,
       title: "Права та ролі користувачів",
-      path: "#"
+      url: "not-available"
     },
     {
       moduleId: 12,
       title: "Налаштування системи",
-      path: "#"
+      url: "not-available"
     }
   ]
 
@@ -504,11 +492,24 @@ export class AvailableModulesService {
     return modules;
   }
 
+  getModule(id: number): Module {
+    let particularModule: Module = {
+      id: 0,
+      title: '',
+      icon: ''
+    };
+
+    const foundModule = this.availableModules.find(am => am.id === id)
+    if (foundModule) {
+      particularModule.id = foundModule.id;
+      particularModule.title = foundModule.title;
+      particularModule.icon = foundModule.icon;
+    }
+
+    return particularModule;
+  }
+
   getSubmodule(index: number): Submodule[] {
-    const particularSubmodules: Submodule[] = [];
-
-    this.submodules.forEach(s => s.moduleId == index ?? particularSubmodules.push(s));
-
-    return particularSubmodules;
+    return this.submodules.filter(s => s.moduleId === index);
   }
 }

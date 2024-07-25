@@ -69,3 +69,11 @@ i {
     pointer-events: none;
 }
 
+.btn-application {
+  background-color: #f39200;
+  color: #fff;
+
+  &:hover {
+    background-color: #ff9900;
+  }
+}

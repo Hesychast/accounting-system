@@ -20,8 +20,8 @@
     <div class="main-menu">
       <ul class="main-menu__list">
         <li class="main-menu__item" *ngFor="let module of modules">
-          <a [routerLink]="module.url ? ['/' + module.url] : ['/not-available']" id="{{module.id}}"><i
-              class="bi bi-{{module.icon}}"></i> {{module.title}}</a>
+          <a [routerLink]="['module-dashboard/' + module.id]" id="{{module.id}}"><i class="bi bi-{{module.icon}}"></i>
+            {{module.title}}</a>
         </li>
       </ul>
     </div>
