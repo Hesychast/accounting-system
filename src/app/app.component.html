@@ -1,114 +1,64 @@
 <div class="wrapper d-flex flex-row" *ngIf="router.url !== '/login'">
-	<div class="sidebar" [ngClass]="status ? 'sidebar_hidden' : ''">
-		<div class="app-title">
-			<p class="app-title_big">АТ "Укрзалізниця"
-				<svg width="2.7rem" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 190 92">
-					<path fill="#f39200"
-						d="M71.68,16.48c5.38,0 8,2.08 8,4.91s-2.64,4.91-8,4.91H66.36L59.74,40.18H72.56c5.76,0 8.21,2 8.21,4.81s-2.45,4.82-8.21,4.82H55.1l-8,16.62H70.67c18.47,0 27.66,-8 27.66,-18.47A18.15,18.15,0,0,0,89.66,32c4.89,-3.24 8.08,-8 8.08-13.64C97.74,7 87.92,0 72.34,0H48.76l-15,31.4L18.8,0H0L24.16,51.22L17,66.43h18.5L59.38,16.48Z">
-					</path>
-					<path fill="#f39200"
-						d="M104.49,28.32h62.77l-7.32-15.48A24.67,24.67,0,0,0,138.08,0H100.15A25.3,25.3,0,0,1,107,17.32A26.22,26.22,0,0,1,104.49,28.32Z">
-					</path>
-					<path fill="#f39200"
-						d="M105,38.11a24.77,24.77,0,0,1,2.52,11a22.82,22.82,0,0,1,-7.39,17.32h85.11L171.89,38.11Z">
-					</path>
-				</svg>
-			</p>
-			<p class="app-title_small">Автоматизована система обліку</p>
-		</div>
+  <div class="sidebar" [ngClass]="status ? 'sidebar_hidden' : ''">
+    <div class="app-title">
+      <p class="app-title_big">АТ "Укрзалізниця"
+        <svg width="2.7rem" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 190 92">
+          <path fill="#f39200"
+            d="M71.68,16.48c5.38,0 8,2.08 8,4.91s-2.64,4.91-8,4.91H66.36L59.74,40.18H72.56c5.76,0 8.21,2 8.21,4.81s-2.45,4.82-8.21,4.82H55.1l-8,16.62H70.67c18.47,0 27.66,-8 27.66,-18.47A18.15,18.15,0,0,0,89.66,32c4.89,-3.24 8.08,-8 8.08-13.64C97.74,7 87.92,0 72.34,0H48.76l-15,31.4L18.8,0H0L24.16,51.22L17,66.43h18.5L59.38,16.48Z">
+          </path>
+          <path fill="#f39200"
+            d="M104.49,28.32h62.77l-7.32-15.48A24.67,24.67,0,0,0,138.08,0H100.15A25.3,25.3,0,0,1,107,17.32A26.22,26.22,0,0,1,104.49,28.32Z">
+          </path>
+          <path fill="#f39200"
+            d="M105,38.11a24.77,24.77,0,0,1,2.52,11a22.82,22.82,0,0,1,-7.39,17.32h85.11L171.89,38.11Z">
+          </path>
+        </svg>
+      </p>
+      <p class="app-title_small">Автоматизована система обліку</p>
+    </div>
 
-		<div class="main-menu">
-			<ul class="main-menu__list">
-				<li class="main-menu__item" *ngFor="let module of modules">
-					<a href="#">{{module}}</a>
-				</li>
-				<!-- <li class="main-menu__item">
-          <a [routerLink]="['/users-management']"><i class="bi bi-sliders2-vertical"></i> Адміністрування</a>
+    <div class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item" *ngFor="let module of modules">
+          <a [routerLink]="module.url ? ['/' + module.url] : ['/not-available']" id="{{module.id}}"><i
+              class="bi bi-{{module.icon}}"></i> {{module.title}}</a>
         </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-archive"></i> Ведення НДІ</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-briefcase"></i> Господарські операції</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-cash-coin"></i> Кошти та розрахунки</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-tools"></i> Виробництво, реалізація продукції, товарів,
-            робіт, послуг</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-house-lock"></i> Закупівля, запаси та складський
-            облік</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-people"></i> Персонал та заробітна плата</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-building-check"></i> Основні засоби та НМА</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-folder-plus"></i> Облік доходів та результатів
-            діяльності</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-folder-minus"></i> Податковий облік</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-calendar2-check"></i> Регламентована державна звітність,
-            баланс</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-shop"></i> Роздрібна торгівля</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-cake2"></i> Облік харчування</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-bank"></i> Комунальні розрахунки</a>
-        </li>
-        <li class="main-menu__item">
-          <a [routerLink]="['/not-available']"><i class="bi bi-truck"></i> Облік автотранспорту</a>
-        </li> -->
-			</ul>
+      </ul>
+    </div>
+  </div>
 
-		</div>
-	</div>
+  <div class="main">
+    <nav class="main__navbar">
+      <button class="switch-button" (click)="switchClass()" [ngClass]="status ? 'clicked' : ''"
+        title="Сховати/показати панель головного меню"><i class="bi bi-arrow-bar-left"></i></button>
 
-	<div class="main">
-		<nav class="main__navbar">
-			<button class="switch-button" (click)="switchClass()" [ngClass]="status ? 'clicked' : ''"
-				title="Сховати/показати панель головного меню"><i class="bi bi-arrow-bar-left"></i></button>
+      <div class="toolbar toolbar_hidden">
+        <div class="search">
+          <input type="text" class="search__text toolbar__search-text form-control" placeholder="Пошук по системі">
+          <button class="search__button toolbar__search-button"><i class="bi bi-search"></i></button>
+        </div>
+        <a [routerLink]="['/not-available']" alt="Пошук" title="Пошук" class="toolbar__button search-button btn"><i
+            class="bi bi-binoculars"></i></a>
+        <a [routerLink]="['/not-available']" alt="Повідомлення" title="Повідомлення"
+          class="toolbar__button messages-button"><i class="bi bi-bell"></i></a>
+        <div class="btn-group">
+          <button alt="Користувач" title="Користувач" class="toolbar__button users-button btn dropdown-toggle"
+            data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i></button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/not-available']">Особистий кабінет</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" [routerLink]="['/login']">Вихід</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-			<div class="toolbar toolbar_hidden">
-				<div class="search">
-					<input type="text" class="search__text toolbar__search-text form-control"
-						placeholder="Пошук по системі">
-					<button class="search__button toolbar__search-button"><i class="bi bi-search"></i></button>
-				</div>
-				<a [routerLink]="['/not-available']" alt="Пошук" title="Пошук"
-					class="toolbar__button search-button btn"><i class="bi bi-binoculars"></i></a>
-				<a [routerLink]="['/not-available']" alt="Повідомлення" title="Повідомлення"
-					class="toolbar__button messages-button"><i class="bi bi-bell"></i></a>
-				<div class="btn-group">
-					<button alt="Користувач" title="Користувач" class="toolbar__button users-button btn dropdown-toggle"
-						data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i></button>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" [routerLink]="['/not-available']">Особистий кабінет</a></li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-						<li><a class="dropdown-item" [routerLink]="['/login']">Вихід</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
-		<router-outlet />
-	</div>
+    <router-outlet />
+  </div>
 </div>
 
 <div *ngIf="router.url === '/login'">
-	<router-outlet />
+  <router-outlet />
 </div>

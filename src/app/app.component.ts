@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterModule, Router } from '@angular/router';
 import { AuthService } from './services/auth.service';
 import { AvailableModulesService } from './services/available-modules.service';
+import { Module } from './interfaces/module';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,7 @@ import { AvailableModulesService } from './services/available-modules.service';
 export class AppComponent implements OnInit {
   title = 'АТ УЗ - Автоматизована система обліку';
   status: boolean = false;
-  modules: Array<string> = [];
+  modules: Module[] = [];
 
   constructor(
     public router: Router,
@@ -29,9 +30,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.modules = this.availableModulesService.getModules();
 
-    if (!this.authService.isAdmin()) {
-      this.router.navigate(['/login']);
-    }
+    // if (!this.authService.isAdmin()) {
+    //   this.router.navigate(['/login']);
+    // }
 
   }
 
