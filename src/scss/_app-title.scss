@@ -1,13 +1,13 @@
 .app-title {
     text-align: left;
-    color: #f39200;
-    
-    &_big {        
+    color: var(--app-secondary-color);
+
+    &_big {
         font-weight: bold;
         font-size: 1.46rem;
         text-transform: uppercase;
         margin-bottom: 5px;
-    }    
+    }
 
     &_small {
         text-transform: uppercase;

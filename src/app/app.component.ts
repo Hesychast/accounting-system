@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
   title = 'АТ УЗ - Автоматизована система обліку';
   status: boolean = false;
   modules: Module[] = [];
+  isActive: boolean = false;
 
   constructor(
     public router: Router,
@@ -30,13 +31,16 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.modules = this.availableModulesService.getModules();
 
-    // if (!this.authService.isAdmin()) {
-    //   this.router.navigate(['/login']);
-    // }
-
+    if (!this.authService.isAdmin()) {
+      this.router.navigate(['/login']);
+    }
   }
 
-  switchClass() {
+  toggleActive(): void {
+    // this.isActive = !this.isActive;
+  }
+
+  switchClass(): void {
     this.status = !this.status;
   }
 }

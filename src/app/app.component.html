@@ -20,7 +20,8 @@
     <div class="main-menu">
       <ul class="main-menu__list">
         <li class="main-menu__item" *ngFor="let module of modules">
-          <a [routerLink]="['module-dashboard/' + module.id]" id="{{module.id}}"><i class="bi bi-{{module.icon}}"></i>
+          <a [routerLink]="['module-dashboard/' + module.id]" id="{{module.id}}" (click)="toggleActive()"
+            [ngClass]="isActive ? 'active' : ''"><i class="bi bi-{{module.icon}}"></i>
             {{module.title}}</a>
         </li>
       </ul>

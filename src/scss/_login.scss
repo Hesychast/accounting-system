@@ -1,5 +1,5 @@
 body.login {
-    background-color: #221673;
+    background-color: var(--app-main-color);
 
     @media (min-width: 768px) {
         background-image: url(../../img/login-background.jpg);
@@ -36,32 +36,31 @@ body.login {
             }
         }
     }
-    
+
     .logo {
         width: 220px;
         height: 84px;
     }
-    
+
     .login-card {
         width: 22rem;
-        
+
         .card-header {
-            background-color: #191d7b;
-            color: #f39200;
+            background-color: var(--app-main-color);
+            color: var(--app-secondary-color);
             font-weight: bold;
         }
 
         .btn-primary,
         .form-check-input:checked {
-            background-color: #191d7b;
-            border-color: #191d7b;
-            color: #f39200;
+            background-color: var(--app-main-color);
+            border-color: var(--app-main-color);
+            color: var(--app-secondary-color);
             font-weight: bold;
         }
-        
+
         .form-check-input:checked {
             box-shadow: transparent;
         }
     }
 }
-    

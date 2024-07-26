@@ -1,0 +1,8 @@
+$prefix: 'app';
+$main-color: #191d7b;
+$secondary-color: #f39200;
+
+:root {
+  --#{$prefix}-main-color: #{$main-color};
+  --#{$prefix}-secondary-color: #{$secondary-color};
+}

@@ -54,6 +54,7 @@
 // @import "../node_modules/bootstrap/scss/bootstrap";
 // @import "../node_modules/bootstrap/scss/tables";
 
+@import "scss/app-colors";
 @import "scss/accordion-customized";
 @import "scss/app-title";
 @import "scss/article";
@@ -66,11 +67,11 @@
 
 
 i {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .btn-application {
-  background-color: #f39200;
+  background-color: var(--app-secondary-color);
   color: #fff;
 
   &:hover {

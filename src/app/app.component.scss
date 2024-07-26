@@ -10,9 +10,12 @@
         }
 
         a {
-            color: #f39200;
+            color: var(--app-secondary-color);
             text-decoration: none;
-            // font-weight: bold;
+
+            &.active {
+              color: #fff;
+            }
         }
     }
 }
