@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   title = 'АТ УЗ - Автоматизована система обліку';
   status: boolean = false;
   modules: Module[] = [];
-  isActive: boolean = false;
+  activeModuleId: number | null = null;
 
   constructor(
     public router: Router,
@@ -36,8 +36,8 @@ export class AppComponent implements OnInit {
     }
   }
 
-  toggleActive(): void {
-    // this.isActive = !this.isActive;
+  toggleActive(moduleId: number): void {
+    this.activeModuleId = moduleId;
   }
 
   switchClass(): void {
